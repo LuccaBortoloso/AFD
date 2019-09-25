@@ -17,3 +17,12 @@ Para verificar se uma palavra é aceita ou não, o primeiro passo é chamar a fu
 ```automato = [estado1, estado2, estado3, ...]```  
 ```palavra = aceitePalavra(automato, 'abababa')```
 
+# Minimização
+Para saber a minimização do autômato basta utilizar a função *criandoTabela()* que tem como parâmetro o autômato (o mesmo da função anterior).
+
+```criandoTabela(automato)```
+
+O resultado é um dicionário indicando os Estados e se eles foram marcados ou não.
+
+```q1,q2 = 'x' ```
+```q2,q3 = '0' ```
