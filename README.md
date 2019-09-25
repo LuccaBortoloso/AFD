@@ -24,5 +24,5 @@ Para saber a minimização do autômato basta utilizar a função *criandoTabela
 
 O resultado é um dicionário indicando os Estados e se eles foram marcados ou não.
 
-```q1,q2 = 'x' ```
+```q1,q2 = 'x' ```<br/>
 ```q2,q3 = '0' ```
