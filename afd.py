@@ -35,19 +35,16 @@ def criandoTabela(automato):
           continue
     
     for i in tabela:
-      #Passando pela tabela
       if(tabela[i] == '0'):
           aux = i.split(',')
           indice = 0
           
-          #Passando pelo automato para verificar os estados possíveis
           for j in automato:
             if(j.nome == aux[0]):
               aux1 = j
             if(j.nome == aux[1]):
               aux2 = j
               
-          #Verificando os estados possíveis
           for k in range(len(aux1.listaAlfabeto)):
             auxEst = aux1.listaEstadosPossiveis[k] + ',' + aux2.listaEstadosPossiveis[k]
             auxEstInv = aux2.listaEstadosPossiveis[k] + ',' + aux1.listaEstadosPossiveis[k]
